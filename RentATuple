@@ -1,0 +1,15 @@
+import sys
+
+t = (1, 2, 3, 4, 5)
+
+l = [1, 2, 3, 4, 5]
+
+print('Tuple t: ', t)
+print('Tuple t Address: ', id(t))
+print('Tuple t Memory: ', sys.getsizeof(t))
+
+print("-"*50)
+
+print('List l: ', l)
+print('List l Address: ', id(l))
+print('List l Memory: ', sys.getsizeof(l))
