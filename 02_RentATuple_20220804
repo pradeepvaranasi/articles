@@ -13,3 +13,13 @@ print("-"*50)
 print('List l: ', l)
 print('List l Address: ', id(l))
 print('List l Memory: ', sys.getsizeof(l))
+
+# Creating a list 'ls'
+ls = [1, 2, 3, "Python", 3.8]
+
+# Creating a tuple 'tp'
+tp = (1, 2, 3, "Python", 3.8)
+
+tp[0] = 0
+
+# error
