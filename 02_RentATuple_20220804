@@ -23,3 +23,28 @@ tp = (1, 2, 3, "Python", 3.8)
 tp[0] = 0
 
 # error
+import sys
+
+ls1 = [1,2]
+print('List ls1 Address: ', id(ls1))
+print('List ls1 Memory: ', sys.getsizeof(ls1))
+print("-"*50)
+
+ls1 = 5
+
+ls2 = [3,4]
+print('List ls2 Address: ', id(ls2))
+print('List ls2 Memory: ', sys.getsizeof(ls2))
+
+import sys
+
+tp1 = (1,2)
+print('Tuple tp1 Address: ', id(tp1))
+print('Tuple tp1 Memory: ', sys.getsizeof(tp1))
+print("-"*50)
+
+tp1 = 5
+
+tp2 = (3,4)
+print('Tuple tp2 Address: ', id(tp2))
+print('Tuple tp2 Memory: ', sys.getsizeof(tp2))
