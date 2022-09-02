@@ -28,3 +28,18 @@ True
 id(board[0][0]) == id(board[1][2]) == id(board[2][1])
 output: 
 True
+
+# board creation using list comprehension
+board = [[" "]*3 for i in range(3)]
+print(board)
+output:
+[[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']]
+# first move
+board[0][0] = "X"
+print(board)
+output:
+[['X', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']]
+# comparing ids
+id(board[0][0]) == id(board[1][0]) == id(board[2][0])
+output:
+False
