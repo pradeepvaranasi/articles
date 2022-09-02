@@ -1,0 +1,30 @@
+# empty list
+ls = []
+# list creation with elements
+ls = [1, 2, 3, "Python", 3.8]
+print(ls)
+output: 
+[1, 2, 3, 'Python', 3.8]
+
+# board creation
+board = [[" "] * 3 ] * 3
+print(board)
+output:
+[[' ', ' ', ' '], [' ', ' ', ' '], [' ', ' ', ' ']]
+
+# Assigning the first move(element) to "X"
+board[0][0] = "X"
+
+
+print(board)
+
+# board creation
+board = [[" "] * 3 ] * 3
+# memory addresses of board rows
+id(board[0]) == id(board[1]) == id(board[2])
+output: 
+True
+# memory addresses of random elements 
+id(board[0][0]) == id(board[1][2]) == id(board[2][1])
+output: 
+True
